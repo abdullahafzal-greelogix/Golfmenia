@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+	<meta charset="UTF-8">
+	<!-- viewport device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- font awsome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- animation js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+	<!-- scrol back to top -->
+
+	<button type="button" class="btn btn-primary btn-floating btn-lg scroll-to-top" id="btn-back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+	<!-- loader -->
+	<div class="loader">
+		<img class="" src="img/animation.gif">
+	</div>
+	<!-- loader -->
+
+    
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand" href="#">
+							<img src="img/logo.png">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">About us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="Events.html">Events</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="offer.html">Offers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link login" href="#">Login</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link Buy-Tickets-header" href="#">Buy-Tickets</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- events -->
+	<section class="events-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="events-heading text-center">
+						<h1>Events</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="events-calender">
+						<form action="#" class="row">
+							<div id="inline_cal"></div>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-12 col-sm-12">
+					<div class="tabs-section">
+						<ul class="nav tabs-sec-nav">
+							<li class="nav-item nav-tabs">
+								<a class="nav-link link-secondary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" href="#">🎧 Music</a>
+							</li>
+							<li class="nav-item nav-tabs">
+								<a class="nav-link link-secondary" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" href="#">🎥 Movie</a>
+							</li>
+							<li class="nav-item nav-tabs">
+								<a class="nav-link link-secondary active" id="album-tab" data-bs-toggle="tab" data-bs-target="#album" href="#">🐶 Pet Show</a>
+							</li>
+							<li class="nav-item nav-tabs">
+								<a class="nav-link link-secondary" id="Race-tab" data-bs-toggle="tab" data-bs-target="#Race" href="#">🐶 Pet Show</a>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="tabContent">
+							<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="events-boxes">
+									<div class="row events-tabs-row">
+										<div class="row">
+											<div class="events-date">
+												<h3>Thu, 06 Jul, 2022</h3>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-12 col-sm-12">
+											<div class="latest-main">
+												<div class="latest-content">
+													<h3>Event-Title</h3>
+													<p>23-Jun-2022 • 04:00PM</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="row">
+											<div class="events-date">
+												<h3>Thu, 06 Jul, 2022</h3>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-12 col-sm-12">
+											<div class="latest-main">
+												<div class="latest-content">
+													<h3>Event-Title</h3>
+													<p>23-Jun-2022 • 04:00PM</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+								<img class="img-fluid" src="https://fakeimg.pl/800x300/?text=about" />
+							</div>
+							<div class="tab-pane fade show active" id="album" role="tabpanel" aria-labelledby="album-tab">
+								<div class="events-boxes">
+									<div class="row events-tabs-row">
+										<div class="row">
+											<div class="events-date">
+												<h3>Thu, 06 Jul, 2022</h3>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-12 col-sm-12">
+											<a href="Eventitle.html">
+												<div class="latest-main">
+												<div class="latest-content">
+													<h3>Event-Title</h3>
+													<p>23-Jun-2022 • 04:00PM</p>
+												</div>
+											</div>
+											</a>
+										</div>
+										<div class="col-lg-6 col-md-12 col-sm-12">
+											<div class="latest-main-one">
+												<div class="latest-content">
+													<h3>Event-Title</h3>
+													<p>23-Jun-2022 • 04:00PM</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row events-tabs-row">
+										<div class="row">
+											<div class="events-date">
+												<h3>Thu, 06 Jul, 2022</h3>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-12 col-sm-12">
+											<div class="latest-main">
+												<div class="latest-content">
+													<h3>Event-Title</h3>
+													<p>23-Jun-2022 • 04:00PM</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="row">
+											<div class="events-date">
+												<h3>Thu, 06 Jul, 2022</h3>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-12 col-sm-12">
+											<div class="latest-main">
+												<div class="latest-content">
+													<h3>Event-Title</h3>
+													<p>23-Jun-2022 • 04:00PM</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="Race" role="tabpanel" aria-labelledby="Race-tab">
+								<img class="img-fluid" src="https://fakeimg.pl/800x300/?text=about" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- events -->
+
+	<!-- footer -->
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="footer-main">
+						<div class="footer-logo">
+							<img src="img/flogo.png">
+						</div>
+						<div class="footer-ul">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Buy Tickets</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="footer-copuright-main">
+							<div class="footer-copyright-text">
+								<p>© Copyright 2022 Wagalag All Rights Reserved</p>
+							</div>
+							<div class="footer-icon">
+								<i class="fa fa-facebook-official" aria-hidden="true"></i>
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+
+
+
+
+	<!-- jquery -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- js bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- custom.js -->
+	<script type="text/javascript" src="js/custom.js"></script>
+	<!-- rome callender -->
+	<script src="js/rome.js"></script>
+	<!-- main.js -->
+	<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
