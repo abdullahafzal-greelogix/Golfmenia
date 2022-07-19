@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account</title>
+	<meta charset="UTF-8">
+	<!-- viewport device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- font awsome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<!-- structure -->
+	<div class="structure">
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<nav class="navbar navbar-expand-lg">
+							<a class="navbar-brand" href="#">
+								<img src="img/logo.png">
+							</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="events.html">Events</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="offer.html">Offers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact-us.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link Buy-Tickets-header" href="#">Buy-Tickets</a>
+									</li>
+									<li class="nav-item dropdown account-nav">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<img class="account-dropdown-img" src="img/girl.png">
+										</a>
+										<ul class="dropdown-menu profile-pic-ul" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#"><img src="img/Profile.png"> My Profile</a></li>
+											<li><a class="dropdown-item" href="#"><img src="img/Dog.png"> My Pets</a></li>
+											<li><a class="dropdown-item" href="#"><img src="img/History.png"> My Bookings</a></li>
+											<li><a href="#" class="logout">Logout</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+
+		<!-- account tabs -->
+
+		<section class="account-tabs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="account-tabs-main">
+							<div class="tab">
+								<button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen"><img src="img/Profile.png"> My Profile</button>
+								<button class="tablinks" onclick="openCity(event, 'Pets')"><img src="img/Dog.png"> My Pets</button>
+								<button class="tablinks" onclick="openCity(event, 'Bookings')"><img src="img/History.png"> My Bookings</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-sm-12">
+						<div class="tabs-content-main">
+							<div id="Profile" class="tabcontent">
+								<div class="profile-conetnt-heading">
+									<h2>My Profile</h2>
+								</div>
+								<div class="profile-image">
+									<img src="img/Photo.png">
+								</div>
+								<div class="profile-content">
+									<h4>Name</h4>
+									<h2>John Doe</h2>
+								</div>
+								<div class="profile-content">
+									<h4>Email</h4>
+									<h2>johndoe@gmail.com</h2>
+								</div>
+								<div class="profile-content">
+									<h4>Birthdate</h4>
+									<h2>23-Aug-1990</h2>
+								</div>
+								<div class="profile-content">
+									<h4>Phone No</h4>
+									<h2>+973 3334 5780</h2>
+								</div>
+							</div>
+
+							<div id="Pets" class="tabcontent">
+								<div class="profile-content">
+									<h4>Email</h4>
+									<h2>johndoe@gmail.com</h2>
+								</div>
+							</div>
+
+							<div id="Bookings" class="tabcontent">
+								<div class="bookings-sec-main">
+									<div class="bookings-heading">
+										<h2>My Bookings</h2>
+									</div>
+									<div class="bookings-content">
+										<h2>CSS Tab</h2>
+										<div class="warpper">
+											<input class="radio" id="one" name="group" type="radio" checked>
+											<input class="radio" id="two" name="group" type="radio">
+											<input class="radio" id="three" name="group" type="radio">
+											<div class="tabs">
+												<label class="tab" id="one-tab" for="one">CSS</label>
+												<label class="tab" id="two-tab" for="two">Skills</label>
+												<label class="tab" id="three-tab" for="three">Prerequisites</label>
+											</div>
+											<div class="panels">
+												<div class="panel" id="one-panel">
+													<div class="panel-title">Why Learn CSS?</div>
+													<p>Without CSS, every web page would be drab plain text and images that flowed straight down the page. With CSS, you can add color and background images and change the layout of your page — your web pages can feel like works of art!</p>
+												</div>
+												<div class="panel" id="two-panel">
+													<div class="panel-title">Take-Away Skills</div>
+													<p>You will learn many aspects of styling web pages! You’ll be able to set up the correct file structure, edit text and colors, and create attractive layouts. With these skills, you’ll be able to customize the appearance of your web pages to suit your every need!</p>
+												</div>
+												<div class="panel" id="three-panel">
+													<div class="panel-title">Note on Prerequisites</div>
+													<p>We recommend that you complete Learn HTML before learning CSS.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- account tabs -->
+
+	</div>
+	<!-- structure -->
+
+
+
+
+
+
+	<!-- js bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- custom.js -->
+	<script type="text/javascript" src="js/custom.js"></script>
+	<!-- tabs  -->
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		document.getElementById("defaultOpen").click();
+	</script>
+	<!-- tabs  -->
+
+
+
+
+</body>
+</html>
