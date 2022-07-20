@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pet Detail</title>
+	<meta charset="UTF-8">
+	<!-- viewport device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- font awsome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- date picker -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+</head>
+<body>
+
+	
+	<!-- loader -->
+	<div class="loader">
+		<img class="" src="img/animation.gif">
+	</div>
+	<!-- loader -->
+
+	<!-- structure -->
+	<div class="structure">
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<nav class="navbar navbar-expand-lg">
+							<a class="navbar-brand" href="#">
+								<img src="img/logo.png">
+							</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="events.html">Events</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="offer.html">Offers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact-us.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a  class="nav-link login" href="#" id="open-modal">Login</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link Buy-Tickets-header" href="#">Buy-Tickets</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+
+		<!-- craet-account -->
+		<section class="creat-account">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+						<div class="create-account-heading">
+							<h2>Create Account</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+						<div class="create-account-form">
+							<h4>ADD PET DETAILS</h4>
+							<div class="pets-accordian">
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												<img src="img/Trash.png">
+												Pet 1
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												<img src="img/Trash.png">
+												Pet 2
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<div class="pet-accordian-content">
+													<form>
+														<div class="form-floating">
+															<input type="name" class="form-control" id="floatingInputGrid" placeholder="Tony" value="Tony">
+															<label for="floatingInputGrid">Name</label>
+														</div>
+														<div class="form-floating d-flex">
+															<input 
+															type="text"
+															class="datepicker_input form-control"
+															id="datepicker1"
+															required
+															placeholder="DD/MM/YYYY" value="DD/MM/YYYY">
+															<label for="datepicker1">Birthdate</label>
+														</div>
+														<div class="file-upload-design">
+															<div class="plus-icon">
+																<img src="img/Plus.png">
+															</div>
+															<div class="fileUpload blue-btn btn width100">
+																<span>Upload File</span>
+																<input type="file" class="uploadlogo" />
+																<p class="file-upload-para">Photos & PDF only</p>
+															</div>
+														</div>
+														<div class="form-floating d-flex">
+															<input 
+															type="text"
+															class="datepicker_input form-control"
+															id="datepicker1"
+															required
+															placeholder="DD/MM/YYYY" value="DD/MM/YYYY">
+															<label for="datepicker1">Vaccination Expiry Date</label>
+														</div>
+														<div class="add-pet-part">
+															<h3><img src="img/Plustwo.png"> Add Pet</h3>
+														</div>
+														<a style="width: 100%;" href="#" class="Buy-Tickets">Continue</a>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- create account -->
+
+		<!-- footer -->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="footer-main">
+							<div class="footer-logo">
+								<img src="img/flogo.png">
+							</div>
+							<div class="footer-ul">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Buy Tickets</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="terms.html">Terms & Conditions</a></li>
+								</ul>
+							</div>
+							<div class="footer-copuright-main">
+								<div class="footer-copyright-text">
+									<p>© Copyright 2022 Wagalag All Rights Reserved</p>
+								</div>
+								<div class="footer-icon">
+									<i class="fa fa-facebook-official" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+	</div>
+	<!-- structure -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- date picker -->
+	<script  src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+	<!-- js bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- custom.js -->
+	<script type="text/javascript" src="js/custom.js"></script>
+
+	<!-- date picker -->
+	<script>
+		const getDatePickerTitle = elem => {
+	  // From the label or the aria-label
+	  const label = elem.nextElementSibling;
+	  let titleText = '';
+	  if (label && label.tagName === 'LABEL') {
+	  	titleText = label.textContent;
+	  } else {
+	  	titleText = elem.getAttribute('aria-label') || '';
+	  }
+	  return titleText;
+	}
+
+	const elems = document.querySelectorAll('.datepicker_input');
+	for (const elem of elems) {
+		const datepicker = new Datepicker(elem, {
+	    'format': 'dd/mm/yyyy', // UK format
+	    title: getDatePickerTitle(elem)
+	});
+	}
+</script>
+<!-- date picker -->
+</body>
+</html>

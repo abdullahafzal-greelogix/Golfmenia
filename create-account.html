@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Offer Food</title>
+	<title>Create account</title>
 	<meta charset="UTF-8">
 	<!-- viewport device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 	<!-- font awsome cdn -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- date picker -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
 </head>
 <body>
 
-
-	<!-- scrol back to top -->
-
-	<button type="button" class="btn btn-primary btn-floating btn-lg scroll-to-top" id="btn-back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 	<!-- loader -->
 	<div class="loader">
 		<img class="" src="img/animation.gif">
@@ -81,7 +79,7 @@
 										<a class="nav-link" href="contact-us.html">Contact</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link login" href="#" id="open-modal">Login</a>
+										<a  class="nav-link login" href="#" id="open-modal">Login</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link Buy-Tickets-header" href="#">Buy-Tickets</a>
@@ -95,88 +93,56 @@
 		</header>
 		<!-- header -->
 
-		<!-- oferfood -->
-		<section class="offerfood">
+		<!-- craet-account -->
+		<section class="creat-account">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="offer-food-heading">
-							<h1>Offers/Food</h1>
-						</div>
-					</div>
-				</div>
-				<div class="row offer-food-row">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer">
-							<div class="latest-content">
-								<h3>Pizza Delight</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer-one">
-							<div class="latest-content">
-								<h3>Hen n’ Bun</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer-two">
-							<div class="latest-content">
-								<h3>Beef em up!</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row offer-food-row">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer">
-							<div class="latest-content">
-								<h3>Pizza Delight</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer-one">
-							<div class="latest-content">
-								<h3>Hen n’ Bun</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer-two">
-							<div class="latest-content">
-								<h3>Beef em up!</h3>
-							</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+						<div class="create-account-heading">
+							<h2>Create Account</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer">
-							<div class="latest-content">
-								<h3>Pizza Delight</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer-one">
-							<div class="latest-content">
-								<h3>Hen n’ Bun</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-offer-two">
-							<div class="latest-content">
-								<h3>Beef em up!</h3>
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+						<div class="create-account-form">
+							<form>
+								<div class="form-floating">
+									<input type="name" class="form-control" id="floatingInputGrid" placeholder="Tony" value="John Doe">
+									<label for="floatingInputGrid">Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="name" class="form-control" id="floatingInputGrid" placeholder="Tony" value="johndoe@gmail.com">
+									<label for="floatingInputGrid">Email</label>
+								</div>
+								<div class="form-floating d-flex">
+									<input 
+									type="text"
+									class="datepicker_input form-control"
+									id="datepicker1"
+									required
+									placeholder="DD/MM/YYYY" value="DD/MM/YYYY">
+									<label for="datepicker1">Birthdate</label>
+								</div>
+								<div class="form-floating">
+									<input type="tel" class="form-control" id="floatingInputGrid" placeholder="◆◆◆◆◆◆◆◆" value="◆◆◆◆◆◆◆◆">
+									<label for="floatingInputGrid">Password</label>
+								</div>
+								<div class="form-floating">
+									<input type="tel" class="form-control" id="floatingInputGrid" placeholder="◆◆◆◆◆◆◆◆" value="◆◆◆◆◆◆◆◆">
+									<label for="floatingInputGrid">Confirm Password</label>
+								</div>
+								<a style="width: 100%;" href="add-pet.html" class="Buy-Tickets">Continue</a>
+							</form>
+							<div class="text-center">
+								<h6 class="mx-auto d-block">Already have an account? Login</h6>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- oferfood -->
+		<!-- create account -->
 
 		<!-- footer -->
 		<section class="footer">
@@ -213,16 +179,63 @@
 			</div>
 		</section>
 		<!-- footer -->
-
 	</div>
 	<!-- structure -->
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- date picker -->
+	<script  src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
 	<!-- js bootstrap -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<!-- custom.js -->
 	<script type="text/javascript" src="js/custom.js"></script>
+
+	<!-- date picker -->
+	<script>
+		const getDatePickerTitle = elem => {
+	  // From the label or the aria-label
+	  const label = elem.nextElementSibling;
+	  let titleText = '';
+	  if (label && label.tagName === 'LABEL') {
+	  	titleText = label.textContent;
+	  } else {
+	  	titleText = elem.getAttribute('aria-label') || '';
+	  }
+	  return titleText;
+	}
+
+	const elems = document.querySelectorAll('.datepicker_input');
+	for (const elem of elems) {
+		const datepicker = new Datepicker(elem, {
+	    'format': 'dd/mm/yyyy', // UK format
+	    title: getDatePickerTitle(elem)
+	});
+	}
+</script>
+<!-- date picker -->
+
+
 
 </body>
 </html>
