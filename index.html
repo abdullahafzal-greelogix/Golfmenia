@@ -13,10 +13,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 	<!-- font awsome cdn -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 <body>
+	<!-- forget modal -->
 
+	<div id="id01" class="w3-modal w3-animate-opacity">
+		<div class="w3-modal-content modal-custom-body">
+			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="forget-close w3-large w3-display-topright">&times;</span>
+			<h2>Forgot Password</h2>
+			<p>We will send you a password reset link to your registered email address.</p>
+			<form>
+				<input type="text" placeholder="Email" name="">
+				<a href="account.html" class="Buy-Tickets login-modal-button">Submit</a>
+			</form>
+			<div class="dont-account">
+				<a href="index.html" class="sign-ip-button">Back to Home</a>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- scrol back to top -->
@@ -39,7 +56,7 @@
 				<form>
 					<input type="text" placeholder="Email" name="">
 					<input type="text" placeholder="Password" name="">
-					<a class="forgot-pas" href="#">Forgot Password?</a>
+					<a class="forgot-pas" href="#" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Forgot Password?</a>
 					<a href="account.html" class="Buy-Tickets login-modal-button">Login</a>
 				</form>
 				<div class="dont-account">
@@ -87,7 +104,7 @@
 										<a  class="nav-link login" href="#" id="open-modal">Login</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link Buy-Tickets-header" href="#">Buy-Tickets</a>
+										<a class="nav-link Buy-Tickets-header" href="ticket.html">Buy-Tickets</a>
 									</li>
 								</ul>
 							</div>

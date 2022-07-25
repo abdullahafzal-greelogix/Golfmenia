@@ -1776,6 +1776,7 @@ input::-webkit-file-upload-button {
 	right: 110px;
 	top: 85px;
 	display: none;
+	z-index: 999;
 }
 .notification-header{
 	background-color: #352F79;
@@ -1893,12 +1894,264 @@ input::-webkit-file-upload-button {
 }
 
 
+/*ticket-pans-new -----------------------------------------------------*/
+
+.plans-new-heading h2{
+	color: black !important;
+}
+.ticket-pans-new{
+	background-image: none !important;
+}
+.tickets-plans-new-main{
+	border: 1px  solid #E0E0E0 ;
+	border-radius: 10px ;
+}
 
 
 
 
+/*checkout-section*/
+
+.checkout-section{
+	padding: 90px 0px;
+}
+.checkout-content {
+   text-align: center;
+   margin-bottom: 56px;
+}
+.checkout-content img{
+	width: 120px;
+	margin-bottom: 8px;
+}
+.checkout-content  h3{
+	font-size: 20px;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700 !important;
+	margin-bottom: 
+}
+.checkout-content p{
+	color: #666666;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+.go-home{
+	margin-top: 56px;
+}
 
 
+
+/*checkout page -----------------------------------------*/
+
+.main-checkout{
+	padding: 90px 0px;
+}
+.checkout-heading{
+	text-align: center;
+	margin-bottom: 56px;
+}
+.checkout-heading h2{
+	color: black;
+	font-size: 48px;
+	font-family: Fheading;
+}
+.checkout-form-heading{
+	margin-bottom: 24px;
+}
+.checkout-form-radio{
+	border: 1px solid #E0E0E0;
+	border-radius: 10px;
+	padding: 24px;
+}
+.checkout-form-heading h3{
+	color: black;
+	font-size: 20px;
+	font-family: Fheading;
+}
+.checkout-form-radio .form-check{
+	padding: 17px 0px 17px 26px;
+	border-bottom: 1px solid #E0E0E0;
+}
+.checkout-form-radio .form-check:last-child{
+	border-bottom: none !important;
+	padding-bottom: 0px;
+}
+.checkout-form-radio .form-check label{
+	font-size: 16px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	cursor: pointer;
+}
+.checkout-form-radio .form-check-input{
+	height: 25px;
+	width: 25px;
+	margin-top: 0px !important;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.checkout-form-radio .form-check-input:checked[type=radio]{
+	background-image: none !important;
+}
+.checkout-form-radio .form-check-input:focus{
+	box-shadow: none !important;
+}
+.Order-Summary-main{
+	border:1px solid #E0E0E0;
+	padding: 24px;
+}
+.Order-Summary-main table{
+	width: 100%;
+}
+.Order-Summary-main table tr td{
+	width: 50% !important;
+	font-size: 14px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	padding: 10px;
+}
+.font-design{
+	text-align: right;
+     font-family: 'Montserrat', sans-serif;
+	font-weight: 700 !important;
+}
+.pay-now{
+	margin-top: 35px;
+}
+.Order-Summary-heading{
+	margin-bottom: 24px;
+}
+.Order-Summary-heading h3{
+	font-size: 20px;
+	color: black;
+	font-family: Fheading;
+}
+
+
+/*single ticket*/
+.single-ticket-main{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+.ticket-person{
+	padding: 20px 0px;
+	border:1px solid lightgray;
+	text-align: center;
+	border-radius: 10px;
+	width: 48%;
+}
+.ticket-person img{
+	width: 150px;
+	margin-bottom:16px;
+}
+.ticket-person h3{
+	font-size: 16px;
+	color: black;
+	 font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+.v-counter {
+    border-radius: 32px;
+    text-align: center;
+    overflow: auto;
+    padding: 0px 4px;
+}
+.v-counter input{
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 700;
+	font-size: 16px;
+}
+.v-counter input[type=button]:hover {
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+}
+.v-counter span {
+   
+    font-size: 13px;
+    color: black;
+    font-family: 'Open Sans';
+}
+/*.v-counter input[type=button], input[type=text] {
+    display: inline-block;
+    width: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px;
+    color: black;
+    height: 33px;
+    font-family: 'Open Sans';
+}*/
+.minusBtn{
+	border:1px solid lightgray !important;
+	border-radius: 50% !important;
+	height: 35px !important;
+	width: 35px !important;
+	margin-right: 10px;
+}
+.plusBtn{
+	border:1px solid lightgray !important;
+	border-radius: 50% !important;
+	height: 35px !important;
+	width: 35px !important;
+	margin-left: 10px;
+}
+.ticket-number{
+	border:1px solid lightgray;
+	padding: 24px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	align-items: center;
+	margin-bottom: 32px;
+}
+.ticket-number h3{
+	font-size: 16px;
+	color: black;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+.ticket-alert ul{
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+.ticket-alert li{
+	padding: 15px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 700;
+	margin-bottom: 12px;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+.ticket-alert li img{
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+.ticket-alert-one{
+	background-color: #14724E;
+}
+.ticket-alert-two{
+	background-color: #DA2625;
+}
+.detail-checkout-accor{
+	margin-bottom: 32px;
+}
+.detail-checkout-accor h4{
+	font-size: 20px;
+}
 
 
 
@@ -2017,7 +2270,29 @@ input::-webkit-file-upload-button {
 
 
 
-
+.w3-modal{
+	position: absolute !important;
+	z-index: 9999999 !important;
+	padding-top: 0px !important;
+}
+.w3-modal-content{
+	border-radius: 10px;
+	width: 500px !important;
+	padding: 20px !important;
+	margin: 15% auto !important;
+}
+.forget-close{
+	right: 10px !important;
+	top: 10px !important;
+	cursor: pointer !important;
+}
+.w3-modal-content p{
+	font-size: 16px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 300;
+	margin-bottom: 16px;
+}
 
 
 
