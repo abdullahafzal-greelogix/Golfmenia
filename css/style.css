@@ -32,7 +32,16 @@ html {
 	right: 20px;
 	top: 15px;
 }
-
+.forget-pasword-eye-icon{
+	position: relative;
+}
+.forget-pasword-eye-icon i{
+	color: #666666;
+	font-size: 20px;
+	position: absolute;
+	right: 20px;
+    top: 18px;
+}
 /* Modal scale animation */
 
 @keyframes scale {
@@ -112,21 +121,28 @@ html {
 	justify-content: center;
 	align-items: center;
 	animation: loader 0.3s 2.2s ease-in forwards;
-	z-index: 99;
+	z-index: 123;
+	clear: both;
 }
 .loader img{
 	width: 170px;
 }
 
 @keyframes loader {
-	to {left: -100vw;}
+	 0% {opacity: 1;}
+   100% {opacity: 0;
+   	z-index: -123;} 
+}
+
+/*@keyframes loader {
+	  0% {opacity: 1;}
+   100% {opacity: 0;} 
 }
 @keyframes progress {
 	to {
 		border-left: 200px solid yellow;
 	}
-}
-
+}*/
 #btn-back-to-top {
 	position: fixed;
 	bottom: 20px;
@@ -2292,6 +2308,12 @@ input::-webkit-file-upload-button {
 	font-family: 'Montserrat', sans-serif !important;
 	font-weight: 300;
 	margin-bottom: 16px;
+}
+.uploaad-button-head h3{
+	font-size: 14px;
+	color: black;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 700;
 }
 
 

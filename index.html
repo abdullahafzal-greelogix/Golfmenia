@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>WAGA PARK</title>
+	<link rel="icon" type="image/x-icon" href="img/fav.png">
 	<meta charset="UTF-8">
 	<!-- viewport device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,13 @@
 	<!-- font awsome cdn -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- animation -->
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
+	<!-- wow js -->
+	<script src="js/wow.min.js"></script>
 
 </head>
 <body>
@@ -39,9 +47,9 @@
 	<!-- scrol back to top -->
 	<button type="button" class="btn btn-primary btn-floating btn-lg scroll-to-top" id="btn-back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 	<!-- loader -->
-	<div class="loader">
+	<!-- <div class="loader">
 		<img class="" src="img/animation.gif">
-	</div>
+	</div> -->
 	<!-- loader -->
 
 
@@ -55,7 +63,10 @@
 				<h2>Login</h2>
 				<form>
 					<input type="text" placeholder="Email" name="">
-					<input type="text" placeholder="Password" name="">
+					<div class="forget-pasword-eye-icon">
+						<input type="text" placeholder="Password" name="">
+						<i class="fa fa-eye" aria-hidden="true"></i>
+					</div>
 					<a class="forgot-pas" href="#" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Forgot Password?</a>
 					<a href="account.html" class="Buy-Tickets login-modal-button">Login</a>
 				</form>
@@ -122,7 +133,7 @@
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="content-section">
 							<div class="conetnt-heading">
-								<h1>Welcome to  <br><span class="Wagalag">Wagalag</span> <span class="park">Park</span></h1>
+								<h1 class="wow animate__animated animate__heartBeat">Welcome to  <br><span class="Wagalag">Wagalag</span> <span class="park">Park</span></h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur risus id est semper condimentum. Suspendisse potenti. Ut tempor ante mauris, semper tempor risus elementum eget.</p>
 							</div>
 							<div class="content-button">
@@ -133,7 +144,7 @@
 					</div>
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="content-img">
-							<img src="img/dogs.png">
+							<img class="wow animate__animated animate__fadeInRight" src="img/dogs.png">
 						</div>
 					</div>
 				</div>
@@ -189,14 +200,14 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="latest-heading">
-							<h2>Latest Events</h2>
-							<a href="#" class="become-member">VIEW ALL</a>
+							<h2 class="wow animate__animated animate__fadeInDown">Latest Events</h2>
+							<a href="#" class="become-member wow animate__animated animate__fadeInDown">VIEW ALL</a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-main">
+						<div class="latest-main wow animate__animated animate__fadeInUp">
 							<div class="latest-content">
 								<h3>Event-Title</h3>
 								<p>23-Jun-2022 • 04:00PM</p>
@@ -204,7 +215,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-main-one">
+						<div class="latest-main-one wow animate__animated animate__fadeInUp">
 							<div class="latest-content">
 								<h3>Event-Title</h3>
 								<p>23-Jun-2022 • 04:00PM</p>
@@ -212,7 +223,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="latest-main-two">
+						<div class="latest-main-two wow animate__animated animate__fadeInUp">
 							<div class="latest-content">
 								<h3>Event-Title</h3>
 								<p>23-Jun-2022 • 04:00PM</p>
@@ -388,6 +399,25 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<!-- custom.js -->
 	<script type="text/javascript" src="js/custom.js"></script>
+
+	<script>
+		var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+	</script>
+
 
 </body>
 </html>
