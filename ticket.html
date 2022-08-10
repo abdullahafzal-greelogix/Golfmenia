@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 	<!-- font awsome cdn -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -155,6 +157,36 @@
 		</section>
 		<!-- plans -->
 
+		<button id="buy-ticket-open" class="btn btn-basic">new popup</button>
+
+		<div class="main-popup-layer dnone">
+			<div id="newPopup" class="buy-ticket-modal">
+				<div class="but-ticket-modal">
+					<h2>Select a Membership</h2>
+					<div class="tickets-main-popup">
+						<div class="single-membership-img">
+							<img src="img/Profile.png">
+						</div>
+						<div class="single-membership-content">
+							<h3>Single Membership</h3>
+							<p>125.00 BHD/yr</p>
+							<h6>1 Adult</h6>
+						</div>
+					</div>
+					<div class="tickets-main-popup">
+						<div class="single-membership-img">
+							<img src="img/Profile.png">
+						</div>
+						<div class="single-membership-content">
+							<h3>Family Membership</h3>
+							<p>165.00 BHD/yr</p>
+							<h6>2 Adults • 2 Children • 1 Dog</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- footer -->
 		<section class="footer">
 			<div class="container">
@@ -238,6 +270,18 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<!-- custom.js -->
 	<script type="text/javascript" src="js/custom.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+
+		// Attach Button click event listener
+		$("#buy-ticket-open, .main-popup-layer").on('click', function(){
+			// show Modal
+			$('.main-popup-layer').toggleClass("dnone");
+		});
+	});
+</script>
 
 </body>
 </html>
