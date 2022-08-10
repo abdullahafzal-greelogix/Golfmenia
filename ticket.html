@@ -157,10 +157,11 @@
 		</section>
 		<!-- plans -->
 
-		<button id="buy-ticket-open" class="btn btn-basic">new popup</button>
+		<div class="container">
+			<button id="buy-ticket-open" class="btn btn-basic">new popup</button>
+		</div>
 
 		<div class="main-popup-layer dnone">
-			<div id="newPopup" class="buy-ticket-modal">
 				<div class="but-ticket-modal">
 					<h2>Select a Membership</h2>
 					<div class="tickets-main-popup">
@@ -184,7 +185,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 
 		<!-- footer -->
@@ -275,8 +275,13 @@
 <script>
 	$(document).ready(function () {
 
+
+
 		// Attach Button click event listener
-		$("#buy-ticket-open, .main-popup-layer").on('click', function(){
+		$("#buy-ticket-open, .main-popup-layer").on('click', function(e){
+			if (e.target !== this) {
+				return;
+			}
 			// show Modal
 			$('.main-popup-layer').toggleClass("dnone");
 		});
