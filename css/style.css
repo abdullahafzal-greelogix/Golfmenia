@@ -2917,6 +2917,46 @@ img {
     display: none;
 }
 
+/*modal 2*/
+
+.des-main-popup-layer{
+    background-color: #00000070;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.des-but-ticket-modal p{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.des-buy-ticket-button {
+    color: #352F79;
+    display: flex;
+    justify-content: flex-end;
+}
+.des-buy-ticket-button button{
+    border: none !important;
+    font-size: 16px;
+    color: #352F79;
+    background-color: transparent !important;
+}
+.des-buy-ticket-button button:hover{
+    color: #352F79;
+}
+.btn-check:focus + .btn-secondary, .btn-secondary:focus{
+    box-shadow: none !important;
+    color: #352F79 !important;
+}
+
+
+
+
+
 
 
 

@@ -187,6 +187,21 @@
 				</div>
 		</div>
 
+		<div class="container">
+			<button id="des-buy-ticket-open" class="btn btn-basic">new popup</button>
+		</div>
+
+		<div class="des-main-popup-layer dnone">
+			<div class="but-ticket-modal des-but-ticket-modal">
+				<h2>Disclaimer</h2>
+				<p>You may buy tickets and membership but you cannot enter in the park without the vaccination info.</p>
+				<div class="des-buy-ticket-button">
+					<button class="btn btn-secondary">cancel</button>
+					<button class="btn btn-secondary">I understand</button>
+				</div>
+			</div>
+		</div>
+
 		<!-- footer -->
 		<section class="footer">
 			<div class="container">
@@ -284,6 +299,20 @@
 			}
 			// show Modal
 			$('.main-popup-layer').toggleClass("dnone");
+		});
+	});
+</script>
+
+<script>
+	$(document).ready(function () {
+
+		// Attach Button click event listener
+		$("#des-buy-ticket-open, .des-main-popup-layer").on('click', function(e){
+			if (e.target !== this) {
+				return;
+			}
+			// show Modal
+			$('.des-main-popup-layer').toggleClass("dnone");
 		});
 	});
 </script>
