@@ -1406,6 +1406,10 @@ html {
     font-weight: 300 !important;
     list-style: none;
 }
+.contact-title-box ul li a{
+    text-decoration: none;
+    color: #000000;
+}
 
 .contact-title-box ul li img {
     width: 25px;
@@ -2628,6 +2632,7 @@ input::-webkit-file-upload-button {
 
 /*media query*/
 @media screen and (max-width: 992px) {
+
     .dog-third {
         display: none !important;
     }
@@ -2736,6 +2741,14 @@ input::-webkit-file-upload-button {
         margin-bottom: 40px;
     }
 }
+
+@media screen and (max-width: 768px){
+    .Buy-Tickets{
+        font-size: 12px;
+    }
+
+}
+
 
 
 .w3-modal {
@@ -2953,6 +2966,25 @@ img {
     color: #352F79 !important;
 }
 
+
+/*profile thimbnail*/
+
+.profile-thumbnail{
+  font-size: 20px;
+    text-decoration: none;
+}
+.profile-thumbnail:hover{
+    color: black;
+}
+.profile-thumbnail-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
 
 
 
