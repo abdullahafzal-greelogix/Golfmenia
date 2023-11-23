@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account</title>
+	<meta charset="UTF-8">
+	<!-- viewport device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- font awsome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- date picker -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+</head>
+<body>
+
+	
+	<!-- loader -->
+	<div class="loader">
+		<img class="" src="img/animation.gif">
+	</div>
+	<!-- loader -->
+
+	<!-- structure -->
+	<div class="structure">
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<nav class="navbar navbar-expand-lg">
+							<a class="navbar-brand" href="#">
+								<img src="img/logo.png">
+							</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="events.html">Events</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="offer.html">Offers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact-us.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link Buy-Tickets-header" href="#">Buy-Tickets</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#"><img id="show" class="notification-image" src="img/noti.png"></a>
+									</li>
+									<li class="nav-item dropdown account-nav">
+										<a class="nav-link dropdown-toggle profile-pic-dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<img class="account-dropdown-img" src="img/girl.png">
+										</a>
+										<ul class="dropdown-menu profile-pic-ul" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#"><img src="img/Profile.png"> My Profile</a></li>
+											<li><a class="dropdown-item" href="#"><img src="img/Dog.png"> My Pets</a></li>
+											<li><a class="dropdown-item" href="#"><img src="img/History.png"> My Bookings</a></li>
+											<li><a href="#" class="logout">Logout</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="notification-main noti">
+				<div class="notification-header">
+					<h4>Notifications</h4>
+				</div>
+				<div class="notification-content">
+					<h3>You have bought tickets</h3>
+					<p>1h ago</p>
+					<h6>View</h6>
+				</div>
+				<div class="notification-content">
+					<h3>You have bought tickets</h3>
+					<p>1h ago</p>
+					<h6>View</h6>
+				</div>
+				<div class="notification-content">
+					<h3>You have bought tickets</h3>
+					<p>1h ago</p>
+					<h6>View</h6>
+				</div>
+				<div class="notification-content">
+					<h3>You have bought tickets</h3>
+					<p>1h ago</p>
+					<h6>View</h6>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+
+		<!-- account tabs -->
+
+		<section class="account-tabs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="account-tabs-main">
+							<div class="tab">
+								<button class="tablinks border-radius-design" onclick="openCity(event, 'Profile')" id="defaultOpen"><img src="img/Profile.png"> My Profile</button>
+								<button class="tablinks" onclick="openCity(event, 'Pets')"><img src="img/Dog.png"> My Pets</button>
+								<button class="tablinks border-radius-design-two" onclick="openCity(event, 'Bookings')"><img src="img/History.png"> My Bookings</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-sm-12">
+						<div class="tabs-content-main">
+
+							<!-- my profile -->
+
+							<div id="Profile" class="tabcontent">
+								<div class="profile-conetnt-heading">
+									<h2>My Profile</h2>
+								</div>
+								<div class="profile-image">
+									<img src="img/Photo.png">
+								</div>
+								<div class="profile-content">
+									<h4>Name</h4>
+									<h2>John Doe</h2>
+								</div>
+								<div class="profile-content">
+									<h4>Email</h4>
+									<h2>johndoe@gmail.com</h2>
+								</div>
+								<div class="profile-content">
+									<h4>Birthdate</h4>
+									<h2>23-Aug-1990</h2>
+								</div>
+								<div class="profile-content">
+									<h4>Phone No</h4>
+									<h2>+973 3334 5780</h2>
+								</div>
+							</div>
+
+							<!-- my profile -->
+
+							<!-- my pets -->
+
+							<div id="Pets" class="tabcontent">
+								<div class="my-pets-main">
+									<div class="row">
+										<div class="col-lg-12 col-md=-12 col-sm-12">
+											<div class="pets-heading">
+												<h2>My Pets</h2>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="pets-accordian">
+												<div class="accordion" id="accordionExample">
+													<div class="accordion-item">
+														<h2 class="accordion-header" id="headingOne">
+															<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<img src="img/Trash.png">
+																Pet 1
+															</button>
+														</h2>
+														<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+															<div class="accordion-body">
+
+															</div>
+														</div>
+													</div>
+													<div class="accordion-item">
+														<h2 class="accordion-header" id="headingTwo">
+															<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+																<img src="img/Trash.png">
+																Pet 2
+															</button>
+														</h2>
+														<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+															<div class="accordion-body">
+																<div class="pet-accordian-content">
+																	<form>
+																		<div class="form-floating">
+																			<input type="name" class="form-control" id="floatingInputGrid" placeholder="Tony" value="Tony">
+																			<label for="floatingInputGrid">Name</label>
+																		</div>
+																		<div class="form-floating d-flex">
+																			<input 
+																			type="text"
+																			class="datepicker_input form-control"
+																			id="datepicker1"
+																			required
+																			placeholder="DD/MM/YYYY" value="DD/MM/YYYY">
+																			<label for="datepicker1">Birthdate</label>
+																		</div>
+																		<div class="uploaad-button-head">
+																			<h3>DHPPI+L Vaccination Certficate</h3>
+																		</div>
+																		<div class="file-upload-design">
+																			<div class="plus-icon">
+																				<img src="img/Plus.png">
+																			</div>
+																			<div class="fileUpload blue-btn btn width100">
+																				<span>Upload File</span>
+																				<input type="file" class="uploadlogo" />
+																				<p class="file-upload-para">Photos & PDF only</p>
+																			</div>
+																		</div>
+																		<div class="form-floating d-flex">
+																			<input 
+																			type="text"
+																			class="datepicker_input form-control"
+																			id="datepicker1"
+																			required
+																			placeholder="DD/MM/YYYY" value="DD/MM/YYYY">
+																			<label for="datepicker1">Vaccination Expiry Date</label>
+																		</div>
+																	</form>
+																	<div class="add-pet-part">
+																		<h3><img src="img/Plustwo.png"> Add Pet</h3>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- my pets -->
+
+							<!-- my booking -->
+
+							<div id="Bookings" class="tabcontent">
+								<div class="bookings-sec-main">
+									<div class="bookings-heading">
+										<h2>My Bookings</h2>
+									</div>
+									<div class="bookings-content">
+										<div class="warpper">
+											<input class="radio" id="one" name="group" type="radio" checked>
+											<input class="radio" id="two" name="group" type="radio">
+											<div class="tabs booking-tabs">
+												<label  id="one-tab" for="one">Active</label>
+												<label  id="two-tab" for="two">History</label>
+											</div>
+											<div class="panels">
+												<div class="panel" id="one-panel">
+													<div class="active-booking-main">
+														<a href="account-detail.html">
+															<div class="active-booking-box">
+																<div class="membership-title">
+																	<i class="fa fa-star" aria-hidden="true"></i>Membership
+																</div>
+																<h3>Membership Subscription</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+														<a href="">
+															<div class="active-booking-box">
+																<div class="event-title-head">
+																	<i class="fa fa-star" aria-hidden="true"></i>Event
+																</div>
+																<h3>Event Title</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+													</div>
+													<div class="active-booking-main">
+														<a href="">
+															<div class="active-booking-box">
+																<div class="ticket-title">
+																	<img src="img/Vector.png"> Ticket
+																</div>
+																<h3>Single Ticket</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+														<a href="">
+															<div class="active-booking-box">
+																<div class="ticket-title">
+																	<img src="img/Vector.png"> Ticket
+																</div>
+																<h3>Single Ticket</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+														<a href="">
+															<div class="active-booking-box">
+																<div class="ticket-title">
+																	<img src="img/Vector.png"> Ticket
+																</div>
+																<h3>Single Ticket</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+														
+													</div>
+												</div>
+												<div class="panel" id="two-panel">
+													<div class="active-booking-main">
+														<a href="account-detail.html">
+															<div class="active-booking-box">
+																<div  class="bookings-report">
+																	<div class="membership-title">
+																		<i class="fa fa-star" aria-hidden="true"></i>Membership
+																	</div>
+																	<div class="booking-expired">
+																		Expired
+																	</div>
+																</div>
+																<h3>Membership Subscription</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+														<a href="">
+															<div class="active-booking-box">
+																<div class="bookings-report">
+																	<div class="event-title-head">
+																		<i class="fa fa-star" aria-hidden="true"></i>Event
+																	</div>
+																	<div class="booking-expired">
+																		Expired
+																	</div>
+																</div>
+																<h3>Event Title</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+													</div>
+													<div class="active-booking-main">
+														<a href="">
+															<div class="active-booking-box">
+																<div class="bookings-report">
+																	<div class="ticket-title">
+																		<img src="img/Vector.png"> Ticket
+																	</div>
+																	<div class="booking-expired">
+																		Expired
+																	</div>
+																</div>
+																<h3>Single Ticket</h3>
+																<p>bought at 13 Jan, 2022 • 08:00PM</p>
+																<p>expires at 13 Jul, 2022 • 08:00PM</p>
+																<ul>
+																	<li><img src="img/People.png"> 2</li>
+																	<li><img src="img/Dog.png"> 2</li>
+																	<li><img src="img/Bills.png"> 100.00 BHD/yr</li>
+																</ul>
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- my booking -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- account tabs -->
+
+	</div>
+	<!-- structure -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- date picker -->
+	<script  src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+	<!-- js bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- custom.js -->
+	<script type="text/javascript" src="js/custom.js"></script>
+
+
+	<!-- tabs  -->
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		document.getElementById("defaultOpen").click();
+	</script>
+	<!-- tabs  -->
+
+
+
+	<!-- date picker -->
+	<script>
+		const getDatePickerTitle = elem => {
+	  // From the label or the aria-label
+	  const label = elem.nextElementSibling;
+	  let titleText = '';
+	  if (label && label.tagName === 'LABEL') {
+	  	titleText = label.textContent;
+	  } else {
+	  	titleText = elem.getAttribute('aria-label') || '';
+	  }
+	  return titleText;
+	}
+
+	const elems = document.querySelectorAll('.datepicker_input');
+	for (const elem of elems) {
+		const datepicker = new Datepicker(elem, {
+	    'format': 'dd/mm/yyyy', // UK format
+	    title: getDatePickerTitle(elem)
+	});
+	}
+</script>
+<!-- date picker -->
+
+
+<!-- notification -->
+
+<script>
+	$(document).ready(function(){
+		$('#show').click(function() {
+			$('.noti').toggle(150);
+		});
+	});
+</script>
+
+<!-- notification -->
+
+
+
+
+</body>
+</html>
