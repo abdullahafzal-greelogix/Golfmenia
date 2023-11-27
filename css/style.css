@@ -7,6 +7,9 @@
 .navbar-brand img {
     max-width: 196px;
 }
+.navbar-toggler{
+    display: none !important;
+}
 
 /*ontent-detail*/
 .content{
@@ -114,6 +117,35 @@
   max-width: 100%;
 }
 
+/*profiles-design*/
+.profiles-design{
+    padding: 90px 0px 0px;
+    background-color: #CEEFE7;
+}
+.profile-keys{
+    text-align: center;
+    margin-bottom: 44px;
+}
+.profile-keys ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.profile-keys ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 8px;
+    font-size: 32px;
+    color: #057D52;
+     font-family: 'Manrope', sans-serif;
+ font-weight: 600;
+}
+.profile-keys ul li svg{
+    fill: #057D52 !important;
+}
+.keys-main-img img{
+    max-width: 100%;
+}
+
 /*footer*/
 .footer{
   padding: 24px 0px;
@@ -148,11 +180,22 @@
 /*footer*/
 
 @media screen and (max-width: 992px){
-  .content-img{
-    display: none;
+    .content-img{
+        margin-top: 40px;
+    }
+  .content-img img{
+    position: relative !important;
+    max-width: 100% !important;
+    left: 10px;
+}
+.profile-keys ul li{
+    font-size: 25px;
 }
 }
 @media screen and (max-width: 768px){
+    .profile-keys ul li{
+    font-size: 22px;
+}
     .content-detail h1{
         font-size: 32px;
     }
