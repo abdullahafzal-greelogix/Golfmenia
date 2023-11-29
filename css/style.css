@@ -242,10 +242,18 @@
     top: 0 !important;
     }
 }
-@media screen and (min-device-width: 320px) and (max-device-width: 1400px) and (orientation : landscape){
+@media screen and (orientation: landscape){
     .content {
     padding: 130px 0px 110px;
 }
+  .main-content-wrapper{
+        height: 100% !important;
+    }
+    .content-detail {
+    position: relative !important;
+    transform: none !important;
+    top: 0 !important;
+    }
 }
 
 
