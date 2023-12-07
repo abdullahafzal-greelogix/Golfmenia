@@ -1,4 +1,13 @@
-  .header{
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #021229 !important;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+.header{
     position: absolute;
     top: 0;
     left: 0;
@@ -9,7 +18,11 @@
     max-width: 196px;
 }
 .navbar-toggler{
-    display: none !important;
+   border:none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+    border:none !important;
 }
 
 /*ontent-detail*/
@@ -180,6 +193,21 @@
   justify-content: flex-end;
 }
 /*footer*/
+
+/*privacy content*/
+.privacy-content{
+    padding: 120px 0px;
+}
+.privacy-content p{
+    font-size: 16px;
+     font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+.privacy-content p strong{
+    font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
 
 @media screen and (max-width: 992px){
     .content-img{
