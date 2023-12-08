@@ -271,6 +271,9 @@
     transform: none !important;
     top: 0 !important;
     }
+    .key-feature{
+        padding: 230px 0px 80px;
+    }
 }
 @media screen and (orientation: landscape){
     .content {
